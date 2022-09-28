@@ -1,0 +1,48 @@
+.dashboard{
+    background-color: #ffffff;
+    padding: 40px 20px 0;
+}
+.user-profile{
+    display: flex;
+
+}
+.user-profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.username h4{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+.location{
+    margin-top: 10px;
+    color: #636e72;
+    display: flex;
+}
+.location .icon {
+    margin-top: 3px;
+    margin-right: 10px;
+}
+.location p{
+    margin: 0;
+    font-size: 14px;
+}
+.physical-info{
+    width: 80%;
+    background-color: #ececec;
+    color: #64696b;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px 25px;
+    border-radius: 15px;
+}
+.physical-info-bold{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
