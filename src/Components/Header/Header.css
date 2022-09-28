@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    align-items: center;
+    color: #ff6347;
+    padding: 15px 150px 0;
+}
+.header-icon{
+    font-size: 30px;
+    margin-right: 20px;
+}
+.site-title {
+    margin: 0;
+}
+.site-title h1{
+    font-size: 30px;
+    font-weight: 700;
+}
