@@ -1,0 +1,31 @@
+.activity {
+    background-color: #ffffff;
+    min-height: 490px;
+    position: relative;
+    padding: 20px;
+    border-radius: 16px;
+}
+.activity img{
+    width: 270px;
+    height: 170px;
+    border-radius: 10px;
+}
+.activity p{
+    color: #636e72;
+}
+.activity button{
+    width: 90%;
+    background-color: #ff6347;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    border: 0;
+    border-radius: 8px;
+    padding: 7px 0;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+.black{
+    color: black;
+}

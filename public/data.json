@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "AMRAP Bodyweight Workout",
+        "image": "https://gethealthyu.com/wp-content/uploads/2015/11/bodyweight-workout-800x800.png.webp",
+        "description": "Do these four exercises as many times as possible in a 15-minute period. By the time you’re finished, you’ll be energized to take on the rest of that crazy day in front of you.",
+        "age": "20-40",
+        "time": 600
+    },
+    {
+        "id": 2,
+        "title": "Hip-Strengthening Exercises",
+        "image": "https://gethealthyu.com/wp-content/uploads/2022/09/Hip-Exercises-For-Seniors-500x500.png.webp",
+        "description": "Make sure to add these hip exercises for seniors into your regular routine in order to strengthen your hips and ward off injury!",
+        "age": "30-50",
+        "time": 400
+    },
+    {
+        "id": 3,
+        "title": "Leg Stretches For Tight Leg",
+        "image": "https://gethealthyu.com/wp-content/uploads/2022/08/Best-Leg-Stretches-500x500.png.webp",
+        "description": "If you’re tired of tight leg muscles, it’s time to take action with some daily stretches. Including quad, hamstring, and calf stretches in your regular routine can keep your leg muscles lengthened and healthy.",
+        "age": "20-40",
+        "time": 1200
+    },
+    {
+        "id": 4,
+        "title": "Cardio Workout",
+        "image": "https://gethealthyu.com/wp-content/uploads/2022/08/no-running-cardio-500x500.png.webp",
+        "description": "You don’t need any equipment for this home workout, meaning you can do it anytime you need a good cardio session on the fly. It’s fast, simple, and will leave you feeling awesome!",
+        "age": "20-40",
+        "time": 600
+    },
+    {
+        "id": 5,
+        "title": "Foam Rolling",
+        "image": "https://gethealthyu.com/wp-content/uploads/2016/01/Foam-Rolling.jpg.webp",
+        "description": "Foam rollers are good for anyone who sits a lot and moves a lot and anyone who loves to work out a lot.",
+        "age": "30-50",
+        "time": 500
+    },
+    {
+        "id": 6,
+        "title": "Kettlebell Leg Workout",
+        "image": "https://gethealthyu.com/wp-content/uploads/2021/08/full-body-kettlebell-workout-500x500.png.webp",
+        "description": " kettlebells can provide a higher intensity workout than the usual strength training routine in a shorter amount of time.",
+        "age": "15-40",
+        "time": 900
+    }
+]

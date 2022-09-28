@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import Activity from '../Activity/Activity';
 import './Activities.css';
 
 const Activities = () => {
+    const [activities, setactivities] = useState([]);
+    useEffect(()=>{
+        fetch('data.json')
+        .then(res=> res.json())
+        .then(data=>setactivities(data))
+    },[])
     return (
-        <div>
-            <h2>Activities</h2>
+        <div className='activities'>
+            {
+                activities.map(activity=> 
+                <Activity
+                    key={activity.id}
+                    activity={activity}>
+                </Activity>)
+            }
         </div>
     );
 };
