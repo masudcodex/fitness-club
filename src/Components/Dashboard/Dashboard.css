@@ -47,3 +47,33 @@
     font-size: 20px;
     font-weight: 600;
 }
+.break-time, .exercise-time-count, .break-time-count{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 25px;
+    background-color: #ececec;
+    border-radius: 15px;
+}
+.break-time p{
+    background-color: tomato;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+}
+.break-time-count {
+    margin: 20px 0;
+}
+.dashboard button{
+    width: 100%;
+    background-color: #ff6347;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 17px;
+    border: 0;
+    border-radius: 8px;
+    padding: 12px 0;
+}

@@ -30,6 +30,29 @@ const Dashboard = () => {
                     </div>
                 </div>
             </div>
+            <div className="user-activities">
+                <h4>Add a break</h4>
+                <div className="break-time">
+                    <p value="10">10s</p>
+                    <p value="20">20s</p>
+                    <p value="30">30s</p>
+                    <p value="40">40s</p>
+                    <p value="50">50s</p>
+                </div>
+            </div>
+            <div>
+                <h4>Exercise Details</h4>
+                <div className='exercise-time-count'>
+                    <h4>Exercise Time</h4>
+                    <p>200 Seconds</p>
+                </div>
+                <div className='break-time-count'>
+                    <h4>Break Time</h4>
+                    <p>15 Seconds</p>
+                </div>
+            </div>
+            <button>Activity Completed</button>
+
         </div>
     );
 };
