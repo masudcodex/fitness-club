@@ -4,7 +4,8 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import './Dashboard.css';
 import image from '../../Images/user.png';
 
-const Dashboard = () => {
+const Dashboard = (props) => {
+    const {time} = props
     return (
         <div className='dashboard'>
             <div className="user-profile">
@@ -44,7 +45,7 @@ const Dashboard = () => {
                 <h4>Exercise Details</h4>
                 <div className='exercise-time-count'>
                     <h4>Exercise Time</h4>
-                    <p>200 Seconds</p>
+                    <p>{time} Seconds</p>
                 </div>
                 <div className='break-time-count'>
                     <h4>Break Time</h4>

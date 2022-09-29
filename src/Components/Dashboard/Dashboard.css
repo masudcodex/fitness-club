@@ -1,7 +1,6 @@
 .dashboard{
     background-color: #ffffff;
-    padding: 40px 20px 0;
-    margin-top: 40px;
+    padding: 20px 10px 0 10px;
 }
 .user-profile{
     display: flex;
@@ -56,13 +55,16 @@
     border-radius: 15px;
 }
 .break-time p{
-    background-color: tomato;
+    background-color: #ffffff;
     padding: 10px;
     border-radius: 50px;
     font-size: 14px;
     font-weight: 500;
-    color: #ffffff;
     cursor: pointer;
+}
+.break-time p:hover{
+    background-color: #ff6347;
+    color: #ffffff;
 }
 .break-time-count {
     margin: 20px 0;
