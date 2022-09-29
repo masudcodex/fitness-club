@@ -37,6 +37,7 @@ const Blog = () => {
                 If the two values don’t match, the Hook uses the first argument callback. <br />
                 Dependency arrays override the default callback behavior and ensure the Hook ignores everything else in the component scope. <br />
                 Some common use cases of useEffect are: <br />
+                </p>
                 <ol>
                     <li>Add an event listener for a button</li>
                     <li>Data fetching from API when component mounts</li>
@@ -44,12 +45,6 @@ const Blog = () => {
                     <li>Clean up event listeners when the component unmounts </li>
                     <li>In each case above, useEffect is used in place of a lifecycle method. </li>
                 </ol>
-                
-                
-                
-                
-                
-                </p>
             </div>
         </div>
     );

@@ -9,3 +9,17 @@
     gap: 20px;
     padding: 40px;
 }
+@media only screen and (max-width: 576px) {
+    .activities{
+        display: block;
+    }
+    .activity-container{
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+
+    .activity-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
