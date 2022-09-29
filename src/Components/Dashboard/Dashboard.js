@@ -1,11 +1,36 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import './Dashboard.css';
 import image from '../../Images/user.png';
+import { addToLs } from '../Utilities/Utilities';
 
 const Dashboard = (props) => {
-    const {time} = props
+    const {time} = props;
+    const [breaktime, setbreaktime] = useState(0);
+    useEffect(()=>{
+        const storedTime = getBreakTime();
+        setbreaktime(storedTime);
+    },[])
+
+
+    const getBreakTime = () => {
+        let breakTime = 0;
+        const storedTime = localStorage.getItem('breaktime');
+        if(storedTime) {
+            breakTime = JSON.parse(storedTime);
+        }
+        return breakTime;
+    } 
+
+    
+    function handleBreakTime(props){
+        setbreaktime(props);
+        addToLs(props)
+    }
+
+
+
     return (
         <div className='dashboard'>
             <div className="user-profile">
@@ -34,11 +59,11 @@ const Dashboard = (props) => {
             <div className="user-activities">
                 <h4>Add a break</h4>
                 <div className="break-time">
-                    <p value="10">10s</p>
-                    <p value="20">20s</p>
-                    <p value="30">30s</p>
-                    <p value="40">40s</p>
-                    <p value="50">50s</p>
+                    <p onClick={()=>handleBreakTime(10)} value="10">10s</p>
+                    <p onClick={()=>handleBreakTime(20)} value="20">20s</p>
+                    <p onClick={()=>handleBreakTime(30)} value="30">30s</p>
+                    <p onClick={()=>handleBreakTime(40)} value="40">40s</p>
+                    <p onClick={()=>handleBreakTime(50)} value="50">50s</p>
                 </div>
             </div>
             <div>
@@ -49,7 +74,7 @@ const Dashboard = (props) => {
                 </div>
                 <div className='break-time-count'>
                     <h4>Break Time</h4>
-                    <p>15 Seconds</p>
+                    <p>{breaktime} Seconds</p>
                 </div>
             </div>
             <button>Activity Completed</button>
