@@ -4,6 +4,8 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import './Dashboard.css';
 import image from '../../Images/user.png';
 import { addToLs } from '../Utilities/Utilities';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Dashboard = (props) => {
     const {time} = props;
@@ -30,6 +32,11 @@ const Dashboard = (props) => {
     }
 
 
+    const toastMessage = () => {
+        toast.success('Congratulation! You have successfully completed your daily workout.', {
+             position: toast.POSITION.TOP_CENTER
+            });
+        };
 
     return (
         <div className='dashboard'>
@@ -77,7 +84,10 @@ const Dashboard = (props) => {
                     <p>{breaktime} Seconds</p>
                 </div>
             </div>
-            <button>Activity Completed</button>
+            <button onClick={toastMessage} className='submitButton'>
+                Activity Completed 
+                <ToastContainer></ToastContainer>
+            </button>
 
         </div>
     );
