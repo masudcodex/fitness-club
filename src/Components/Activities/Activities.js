@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Activity from '../Activity/Activity';
 import Header from '../Header/Header';
 import Dashboard from '../Dashboard/Dashboard';
+import Blog from '../Blog/Blog';
 import './Activities.css';
 
 const Activities = () => {
@@ -36,7 +37,9 @@ const Activities = () => {
             <div className="dashboard">
                 <Dashboard time={time}></Dashboard>
             </div>
-            
+            <div className='blog'>
+               <Blog></Blog> 
+            </div>
         </div>
     );
 };

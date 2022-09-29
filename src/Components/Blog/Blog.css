@@ -1,0 +1,10 @@
+.blog-single{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    margin: 40px;
+}
+.flex-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
